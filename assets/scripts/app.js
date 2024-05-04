@@ -1,5 +1,12 @@
-let currentResult = 0;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-currentResult += 10;
+function add(num1, num2) {
+    const result = num1 + num2;
+}
 
-outputResult(currentResult,'');
+currentResult = ((currentResult + 10) * 3) / 2 - 1;
+
+let calDescripcion = "(${defaultResult} + 10)*3/2-1";
+
+outputResult(currentResult, calDescripcion);
