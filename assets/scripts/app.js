@@ -2,11 +2,9 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 
 function add(num1, num2) {
-    const result = num1 + num2;
+    currentResult = currentResult + userInput.value;
+    outputResult(currentResult, '');
 }
 
-currentResult = ((currentResult + 10) * 3) / 2 - 1;
+addBtn.addEventListener('click', add);
 
-let calDescripcion = "(${defaultResult} + 10)*3/2-1";
-
-outputResult(currentResult, calDescripcion);
